@@ -1,15 +1,15 @@
 <script>
-	import { navigating } from '$app/stores';
-	import Nav from './Nav.svelte';
-	import PreloadingIndicator from './PreloadingIndicator.svelte';
+  import { navigating } from '$app/stores'
+  import Nav from './Nav.svelte'
+  import PreloadingIndicator from './PreloadingIndicator.svelte'
 </script>
 
 {#if $navigating}
-	<PreloadingIndicator />
+  <PreloadingIndicator />
 {/if}
 
 <Nav />
 
 <main>
-	<slot />
+  <slot />
 </main>
