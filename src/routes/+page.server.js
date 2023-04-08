@@ -18,7 +18,7 @@ export async function load({ locals, url }) {
   const [{ articles, articlesCount }, { tags }] = await Promise.all([
     api.get(`${endpoint}?${q}`, locals.user?.token),
     api.get('tags')
-  ]);
+  ])
 
   return {
     articles,

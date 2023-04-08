@@ -1,15 +1,23 @@
 {
-  "name": "realworld.svelte.dev",
-  "version": "1.0.1-next.0",
-  "private": true,
+  "author": "Yoonge <7884008@qq.com>",
+  "description": "A Svelte Realworld application.",
+  "keywords": [
+    "Realworld",
+    "Svelte",
+    "TypeScript",
+    "Vite"
+  ],
   "license": "MIT",
+  "name": "svelte-realworld-app",
+  "private": true,
   "type": "module",
+  "version": "1.0.1-next.0",
   "scripts": {
-    "dev": "vite dev",
     "build": "vite build",
-    "preview": "vite preview",
+    "dev": "vite dev",
+    "format": "prettier --write --plugin-search-dir=. .",
     "lint": "prettier --check --plugin-search-dir=. .",
-    "format": "prettier --write --plugin-search-dir=. ."
+    "preview": "vite preview"
   },
   "devDependencies": {
     "@sveltejs/adapter-vercel": "^1.0.0",

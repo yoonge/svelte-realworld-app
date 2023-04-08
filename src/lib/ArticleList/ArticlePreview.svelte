@@ -36,7 +36,7 @@
           return ({ result, update }) => {
             button.disabled = false
             if (result.type === 'error') update()
-          };
+          }
         }}
         class="pull-xs-right"
       >
